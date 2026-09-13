@@ -28,6 +28,7 @@ public class tepNhiPhan {
                 output.write(buffer,0,bytesRead);
                 totalBytes += bytesRead;
             }      
+            //Kiểm thử 1:
             System.out.println("Đã sao chép " + totalBytes + " byte.");
 
             //Kiểm thử 2:
