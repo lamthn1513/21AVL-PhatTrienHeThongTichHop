@@ -1,4 +1,4 @@
-package Tuan3.Bai1;
+package Lab03_JavaStream.Bai1;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
