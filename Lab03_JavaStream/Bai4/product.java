@@ -7,13 +7,13 @@ public class product {
     private final int quantity;
     public product (String code, String name, double unitPrice, int quantity){
         if (code == null || code.isEmpty()) {
-            throw new IllegalArgumentException("Mã không được rỗng");
+            throw new IllegalArgumentException("Mã không được rỗng.");
         }
         if (name == null || name.isEmpty()) {
-            throw new IllegalArgumentException("Tên không được rỗng");
+            throw new IllegalArgumentException("Tên không được rỗng.");
         }
         if (unitPrice <=0 || quantity <0) {
-            throw new IllegalArgumentException("Giá hoặc số lượng không hợp lệ");
+            throw new IllegalArgumentException("Giá hoặc số lượng không hợp lệ.");
         }
         this.code=code;
         this.name=name;
