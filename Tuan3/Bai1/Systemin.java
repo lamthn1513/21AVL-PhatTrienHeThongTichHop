@@ -8,7 +8,7 @@ public class Systemin {
         BufferedReader reader =new BufferedReader(
             new InputStreamReader(System.in, StandardCharsets.UTF_8));
             int count = 0;
-            System.out.print("Nhập văn bản (nhập q để kết thúc): ");
+            System.out.print("Nhập văn bản, nhập q để kết thúc: ");
             try {
                 while (true) {
                     String line = reader.readLine();

@@ -30,7 +30,7 @@
                     writer.newLine();
                 }
 
-                //Mở rộng 3: Nếu thay UTF-8 thành charset khác thì các ký tư tiếng Vieetj sẽ hiển thị sai
+                //Mở rộng 3: Nếu thay UTF-8 thành charset khác thì các ký tư tiếng Việt sẽ hiển thị sai
                 try (BufferedReader reader = Files.newBufferedReader(file, StandardCharsets.UTF_8)) {
                     String line;
                     int number = 1;
