@@ -39,7 +39,7 @@ public class HostInspector {
             System.out.println("Query: " + uri.getQuery());
             System.out.println("Fragment: " + uri.getFragment());
         } catch (URISyntaxException e) {
-            System.out.println("ERROR: INVALID_URI");
+            System.out.println("ERROR: URI");
         }
     }
 }
