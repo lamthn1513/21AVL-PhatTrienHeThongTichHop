@@ -16,7 +16,7 @@ public class Systemin {
                         break;
                     }
                     count++;
-                    System.out.printf("Dong %d: %s%n", count, line);
+                    System.out.printf("Dòng %d: %s%n", count, line);
                 }
             } catch (IOException e){
                 System.err.print("Không thể đọc dữ liệu: "+e.getMessage());

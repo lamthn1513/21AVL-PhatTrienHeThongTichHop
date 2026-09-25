@@ -20,10 +20,7 @@ public class Server {
                 int n = s.charAt(0) - '0';
                 out.println(number[n]);
             } else {
-                out.println("ERR INVALID_DIGIT");
             }
         }
-        socket.close();
-        server.close();
     }
 }
