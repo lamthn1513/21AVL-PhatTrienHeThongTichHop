@@ -2,7 +2,8 @@ package Lab4.Bai2YCT;
 
 import java.io.*;
 import java.net.*;
-public class Server {
+public class Server 
+{
     public static void main(String[] args) throws Exception {
         ServerSocket server = new ServerSocket(1502);
         System.out.println("Server dang chay...");
