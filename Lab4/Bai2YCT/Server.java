@@ -20,47 +20,47 @@ public class Server {
                 {
                     break;
                 }
-                String result;
+                String kqua;
                 if (input.length() == 1 && input.charAt(0) >= '0' && input.charAt(0) <= '9') 
                     {
                     switch (input.charAt(0)) {
                         case '0':
-                            result = "khong";
+                            kqua = "khong";
                             break;
                         case '1':
-                            result = "mot";
+                            kqua = "mot";
                             break;
                         case '2':
-                            result = "hai";
+                            kqua = "hai";
                             break;
                         case '3':
-                            result = "ba";
+                            kqua = "ba";
                             break;
                         case '4':
-                            result = "bon";
+                            kqua = "bon";
                             break;
                         case '5':
-                            result = "nam";
+                            kqua = "nam";
                             break;
                         case '6':
-                            result = "sau";
+                            kqua = "sau";
                             break;
                         case '7':
-                            result = "bay";
+                            kqua = "bay";
                             break;
                         case '8':
-                            result = "tam";
+                            kqua = "tam";
                             break;
                         case '9':
-                            result = "chin";
+                            kqua = "chin";
                             break;
                         default:
-                            result = "Loi, nhap lai di nao";
+                            kqua = "Loi, nhap lai di nao";
                     }
                 } else {
-                    result = "Loi, nhap lai di nao";
+                    kqua = "Loi, nhap lai di nao";
                 }
-                out.println(result);
+                out.println(kqua);
             }
             socket.close();
             System.out.println("Client da ngat ket noi");
