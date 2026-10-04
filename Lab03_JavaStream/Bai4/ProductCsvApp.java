@@ -13,7 +13,7 @@ public class ProductCsvApp {
         Path input = Path.of("data", "products.csv");
         Path report = Path.of("data", "report.txt");
 
-        List<Product> products = new ArrayList<>();
+        List<product> products = new ArrayList<>();
         try (BufferedReader reader = Files.newBufferedReader(input, StandardCharsets.UTF_8)) {
             reader.readLine();
             String line;
@@ -29,7 +29,7 @@ public class ProductCsvApp {
                 continue;
             }
             try {
-                products.add(new Product(parts[0].trim(), parts[1].trim(),
+                products.add(new product(parts[0].trim(), parts[1].trim(),
                 Double.parseDouble(parts[2].trim()),
                 Integer.parseInt(parts[3].trim())));
             } catch (IllegalArgumentException e) {
@@ -41,7 +41,7 @@ public class ProductCsvApp {
         return;
     }
     double total = 0;
-    for (Product product : products){
+    for (product product : products){
         System.out.println(product);
         total += product.inventoryValue();
     }

@@ -1,11 +1,11 @@
 package Lab03_JavaStream.Bai4;
 
-public class Product {
+public class product {
     private final String code;
     private final String name;
     private final double unitPrice;
     private final int quantity;
-    public Product (String code, String name, double unitPrice, int quantity){
+    public product (String code, String name, double unitPrice, int quantity){
         if (code == null || code.isEmpty()) {
             throw new IllegalArgumentException("Mã không được rỗng.");
         }
